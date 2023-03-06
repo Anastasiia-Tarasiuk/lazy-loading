@@ -1,7 +1,7 @@
 const options = {
     root: null,
     rootMargin: '0px',
-    threshold: 1,
+    threshold: 0.5,
 };
 
 // lazy-loading
@@ -25,4 +25,3 @@ let lazyImages = [...document.querySelectorAll('.lazy-loaded-image')];
 lazyImages.forEach(lazyImage => {
   lazyImageObserver.observe(lazyImage);
 });
-
